@@ -1,20 +1,91 @@
-huhtml {
-  height: 100%;
-  background: 50% 50% no-repeat
-    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+/* General Page Styling */
+body {
+    background-color: #f7f4ed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333333;
 }
 
-h1 {text-align:center;
-    color:blue;
-    font-family:arial;}
-html {
-  height: 100%;
-  background: 50% 50% no-repeat
-    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+/* Header & Navigation Menu */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4af37;
 }
-ul{list_style_type:none;
-  }
-li{display:inline;padding:4px;
-  }
-img{width:100px;
-   }
+
+header h1 {
+    color: #b85c37;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: #2b5847;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #b85c37;
+}
+
+/* Main Content Box (Card) */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.card h2 {
+    color: #b85c37;
+    margin-top: 0;
+}
+
+/* Circle Logo with Gold Border */
+.logo-container {
+    width: 160px;
+    height: 160px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Paragraph Description */
+.card p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #555555;
+}
