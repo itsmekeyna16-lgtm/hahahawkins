@@ -16,5 +16,5 @@ ul{list_style_type:none;
   }
 li{display:inline;padding:4px;
   }
-img{width:25px;
+img{maxwidth:25px;
    }
